@@ -1,11 +1,13 @@
+@charset "UTF-8";
+
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+:root {
+    --cor1: #7133B3;
+    --cor2: #27A8D3;
+    --cor3: #3A0177;
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -99,11 +101,11 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-color: var(--cor3);
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, var(--cor3) 15%, var(--cor2) 85%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, var(--cor3) 15%, var(--cor2) 85%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, var(--cor3) 15%, var(--cor2) 85%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, var(--cor3) 15%, var(--cor2) 85%);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -120,7 +122,7 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color: var(--cor3);
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -3121,7 +3123,8 @@ input, select, textarea {
 				#header.alt .logo img {
 					display: block;
 					margin: 0 auto;
-					max-width: 75%;
+					max-width: 50%;
+					border-radius: 50%;
 				}
 
 		@media screen and (max-width: 1280px) {
@@ -3215,13 +3218,13 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-		background-color: #ffffff;
-		color: #636363;
+		background-color: var(--cor3);
+		color: white;
 		position: absolute;
 		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
-		background-color: #f7f7f7;
+		background-color: var(--cor3);
 		border-top-left-radius: 0.25em;
 		border-top-right-radius: 0.25em;
 		cursor: default;
@@ -3229,15 +3232,15 @@ input, select, textarea {
 	}
 
 		#nav input, #nav select, #nav textarea {
-			color: #636363;
+			color: white;
 		}
 
 		#nav a:hover {
-			color: #636363;
+			color: var(--cor2);
 		}
 
 		#nav strong, #nav b {
-			color: #636363;
+			color: var(--cor2);
 		}
 
 		#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
@@ -3293,11 +3296,11 @@ input, select, textarea {
 				}
 
 					#nav ul li a:hover {
-						background-color: rgba(222, 222, 222, 0.25);
+						background-color: white;
 					}
 
 					#nav ul li a.active {
-						background-color: #ffffff;
+						background-color: var(--cor2);
 						box-shadow: none;
 					}
 
@@ -3305,7 +3308,7 @@ input, select, textarea {
 			position: fixed;
 			top: 0;
 			padding: 0.5em 1em;
-			background-color: rgba(247, 247, 247, 0.95);
+			background-color: var(--cor3);
 			border-top-left-radius: 0;
 			border-top-right-radius: 0;
 			z-index: 10000;
